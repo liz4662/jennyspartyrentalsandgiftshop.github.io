@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Profile</title>
+</head>
+
+  <body>
+    <header>
+      <h1>CONTACT</h1>
+    </header>
+
+    <nav id="navbar" class="nav">
+      <div class="logo">
+        <img href="index.html" src="logo.png" alt="Yellow logo with a bounce house in the center.">
+      </div>
+      
+      <ul class="nav-list">
+        <li>
+          <a  id="home" href="index.html">HOME</a>
+        </li>
+        <li>
+          <a id="bounce" href="bounce_house.html">BOUNCE HOUSE</a>
+        </li>
+        <li>
+          <a id="balloons" href="balloons.html">BALLOONS</a>
+        </li>
+        <li>
+          <a id="chairs" href="#projects">CHAIRS</a>
+        </li>
+        <li>
+          <a id="tables" href="#projects">TABLES</a>
+        </li>
+        <li>
+          <a id="about" href="about.html">ABOUT</a>
+        </li>
+        <li>
+          <a id="contact" href="contact_us.html">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+    
+<section class="maps">
+  <h2 >Call us NOW at: (323) 535-9623</h2>
+  <div class="map" >
+      <h3 >Find us at:<br/> Jenny's Party Rentals & Gifts<br />
+        1027 Long Beach Blvd, <br />
+        Lynwood, CA 9026</h3>
+      
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.343463865336!2d-118.21496322504942!3d33.93229322405581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2cb96e7eeee91%3A0x16dc301d8b54dbf9!2sJenny&#39;s%20Party%20Rents%20%26%20Gift%20Shop!5e0!3m2!1sen!2sus!4v1691838371057!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+ </section>
+
+
+<section class="insta">
+  <h2>Follow us on Instagram!</h2>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-a6d7e52c-f18c-4545-b6ae-073f0765c2af" ></div>
+  </section>
+      
+      
+ 
+
+<footer >
+  <p class="footer">OPENING HOURS:<br/>
+  Monday-Friday: 8am-8pm<br />Saturday-Sunday: 8am-4pm
+</p>
+  <p class="footer">
+  <address>
+  Jenny's Party Rentals & Gifts<br />
+  1027 Long Beach Blvd, <br />
+  Lynwood, CA 90262<br />
+  </address>
+  </p>
+</footer>
+</body>
+
+
+
+<style>
+.insta{
+  padding: 5vw 10vw;
+    align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+ h2{
+  margin-bottom: 5vw ;
+  font-size: 3vw;
+  text-align: center;
+}
+header{
+  background-color: black;
+  color:white;
+  height: 30vw;
+}
+h1{
+  padding-top: 18vw;
+  padding-left: 10vw;
+  font-size: 4vw;
+}
+html {
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding:0;
+    
+}
+body{
+  margin: 0;
+}
+
+
+.logo img{
+  width: 5vw;
+  margin: .5vw 1.5vw;
+  z-index: 100;
+
+}
+.nav {
+  display: flex;
+  justify-content:left;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(rgb(0,0,0,1), rgb(0,0,0,0));
+  z-index: 100;
+}
+
+nav li {
+  display:inline-block;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color:white;
+  padding: 2.5vw;
+  font-size: 1vw;
+  display: block;
+}
+
+.map{
+  display: flex; 
+  text-align: center
+}
+h3{
+  width: 50%;
+  padding-top: 5vw; 
+  font-size: 2vw;
+  
+}
+section{
+  padding: 5vw 7vw;
+}
+.maps iframe{
+  width:60%;
+  border-radius:20px;
+}
+footer{
+  margin-top:10vw;
+  display: flex;
+  background-color: #ead1dc;
+  max-width: 100%;
+  padding: 10px 40px;
+  justify-content: space-around;
+  }
+
+@media (hover: hover) {
+  #home:hover {
+    color: white;
+    background: red;
+  }
+  #bounce:hover {
+    color: white;
+    background: blue;
+  }
+  #balloons:hover {
+    color: white;
+    background: purple;
+  }
+  #chairs:hover {
+    color: white;
+    background: orange;
+  }
+  #tables:hover {
+    color: white;
+    background: green;
+  }
+  #about:hover {
+    color: white;
+    background: indigo;
+  }
+  #contact:hover {
+    color: white;
+    background: violet;
+  }
+}
+
+</style>
+</html>
