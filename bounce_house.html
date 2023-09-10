@@ -41,15 +41,18 @@
           <a id="contact" href="contact_us.html">CONTACT</a>
         </li>
       </ul>
-    </nav>
-    <section class="about">
-        <h2>Get to know us!</h2>
-        <img src="building.png">
-        <h3>We are a family-owned party supply business located in Lynwood, CA! We are passionate about bringing smiles to people's faces and bringing celebrations to life!</h3>
-    </section>
+  </nav>
+<section class="pic_wall">
+    <img class="enlarge-onhover" src="bounce_house1.jpg">
+    <img class="enlarge-onhover" src="bounce_house2.jpg">
+    <img class="enlarge-onhover" src="bounce_house3.jpg">
+    <img class="enlarge-onhover" src="bounce_house4.jpg">
+    <img class="enlarge-onhover" src="bounce_house5.jpg">
+    <img class="enlarge-onhover" src="bounce_house7.jpg">
+</section>
     
 
-<footer >
+<footer>
   <p class="footer">OPENING HOURS:<br/>
   Monday-Friday: 8am-8pm<br />Saturday-Sunday: 8am-4pm
 </p>
@@ -60,18 +63,26 @@
   Lynwood, CA 90262<br />
   </address>
   </p>
+
 </footer>
 </body>
 
 
 
 <style>
-.about img{
-    width:60%;
+.pic_wall img{
+  transition: transform .2s;
+  width:  25vw;
+  height: 25vw;
+  padding: 5px;
+  display:flexbox;
+  border-radius: 20px;
 }
-.about{
-    text-align: center;
+img:hover{
+    transform:scale(2.5);
+    margin:auto;
 }
+
 
 
 h2{
@@ -79,6 +90,7 @@ h2{
   font-size: 3vw;
   text-align: center;
 }
+
 header{
   background-color: black;
   color:white;
