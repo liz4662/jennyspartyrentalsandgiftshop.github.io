@@ -66,6 +66,42 @@
 
 
 <style>
+.favicon img{
+  width: 5vw;
+  margin: .5vw 3vw;
+  z-index: 100;
+
+}
+.nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(rgb(0,0,0,1), rgb(0,0,0,0));
+  z-index: 100;
+  color: white;
+}
+
+nav li {
+  display:inline-block;
+  list-style: none;
+}
+nav h1{
+  font-size: 1.2vw;
+  padding: 2.5vw 0;
+  padding-left:16vw;
+}
+
+nav a {
+  text-decoration: none;
+  color:white;
+  padding: 2.5vw 1vw;
+  font-size: 1vw;
+  display: block;
+}
+.nav div{
+  float:right;
+}
 .pic_wall{
   text-align: center;
   margin-top: 10vw;
@@ -122,28 +158,6 @@ body{
   z-index: 100;
 
 }
-.nav {
-  display: flex;
-  justify-content:left;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: linear-gradient(rgb(0,0,0,1), rgb(0,0,0,0));
-  z-index: 100;
-}
-
-nav li {
-  display:inline-block;
-  list-style: none;
-}
-
-nav a {
-  text-decoration: none;
-  color:white;
-  padding: 2.5vw;
-  font-size: 1vw;
-  display: block;
-}
 
 h3{
   padding-top: 5vw; 
@@ -154,14 +168,6 @@ section{
   padding: 5vw 7vw;
 }
 
-footer{
-  margin-top:10vw;
-  display: flex;
-  background-color: #ead1dc;
-  max-width: 100%;
-  padding: 10px 40px;
-  justify-content: space-around;
-  }
 @media (hover: hover) {
   #home:hover {
     color: white;
@@ -192,6 +198,16 @@ footer{
     background: violet;
   }
   }
+  footer > p {
+  margin: 2vw;
+}
+footer{
+  color: white;
+  background-color: black;
+  padding: 2vw 7vw;
+  display: flex;
+  max-width: 100%;
+} 
 
 </style>
 </html>
