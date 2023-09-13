@@ -14,7 +14,7 @@
     <div class="favicon">
       <img href="index.html" src="favicon.png" alt="Yellow logo with a bounce house in the center.">
     </div>
-    
+    <div>
     <ul class="nav-list">
       <li>
         <a  id="home" href="index.html">HOME</a>
@@ -38,6 +38,10 @@
         <a id="contact" href="contact_us.html">CONTACT</a>
       </li>
     </ul>
+  </div>
+    <div class="phone_num">
+    <h1>CALL TO NOW TO RENT: (323) 535-9623</h1>
+  </div>
   </nav>
 
 
@@ -73,15 +77,13 @@
 
 
   <footer >
-    <p class="footer"><span>OPENING HOURS:<br />
+    <p class="footer"><strong> OPENING HOURS:</strong><br />
       Monday-Friday: 8am-8pm<br />Saturday-Sunday: 8am-4pm
-    </span ></p>
-    <p class="footer">
-    <address>
-    Jenny's Party Rentals & Gifts<br />
+    </p>
+    <p class="footer"><em>
+    <strong> Jenny's Party Rentals & Gifts</strong><br />
     1027 Long Beach Blvd, <br />
-    Lynwood, CA 90262<br />
-    </address>
+    Lynwood, CA 90262<br /></em>
     </p>
     <p>Image by <a href="https://www.freepik.com/free-photo/full-shot-smiley-girl-bounce-house_29801462.htm#query=bounce%20house&position=0&from_view=search&track=ais">Freepik</a></p>
   </footer>
@@ -90,9 +92,45 @@
 
 
 <style>
-  .logo img{
-    width:40vw;
-    }
+.favicon img{
+  width: 5vw;
+  margin: .5vw 3vw;
+  z-index: 100;
+
+}
+.nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(rgb(0,0,0,1), rgb(0,0,0,0));
+  z-index: 100;
+  color: white;
+}
+
+nav li {
+  display:inline-block;
+  list-style: none;
+}
+nav h1{
+  font-size: 1.2vw;
+  padding: 2.5vw 0;
+  padding-left:16vw;
+}
+
+nav a {
+  text-decoration: none;
+  color:white;
+  padding: 2.5vw 1vw;
+  font-size: 1vw;
+  display: block;
+}
+.nav div{
+  float:right;
+}
+.logo img{
+  width:40vw;
+  }
 
 .picSec{
   padding: 5vw 7vw;
@@ -105,14 +143,12 @@
   border-radius: 3vw;
 
 }
-
 .events{
   margin: 20vw 1vw;
   font-size: 3vw;
 }
 
 .logo {
-  
   position: absolute;
   top: 50%;
   left: 50%;
@@ -147,44 +183,7 @@ html {
   margin-right: 5vw;
 
 }
-.favicon img{
-  width: 5vw;
-  margin: .5vw 1.5vw;
-  z-index: 100;
 
-}
-.nav {
-  display: flex;
-  justify-content:left;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: linear-gradient(rgb(0,0,0,1), rgb(0,0,0,0));
-  z-index: 100;
-}
-
-nav li {
-  display:inline-block;
-  list-style: none;
-}
-
-nav a {
-  text-decoration: none;
-  color:white;
-  padding: 2.5vw;
-  font-size: 1vw;
-  display: block;
-}
-
-footer{
-  margin-top:10vw;
-  padding: 30vw;
-  display: flex;
-  background-color: #ead1dc;
-  max-width: 100%;
-  padding: 10px 40px;
-  justify-content: space-around;
-  }
 @media (hover: hover) {
   #home:hover {
     color: white;
@@ -214,12 +213,12 @@ footer{
     color: white;
     background: violet;
   }
-  }
+ }
 
 .slideshow-container {
   position: relative;
   width:100%;
-  height;auto:
+  height:auto;
  }
 
 .mySlides img{
@@ -234,7 +233,6 @@ footer{
 .fade {
   animation-name:fade;
   animation-duration:3s;
-  
 }
 
 @keyframes fade {
@@ -242,7 +240,16 @@ footer{
   to {opacity: 1}
 }
 
-    
+footer > p {
+  margin: 2vw;
+}
+footer{
+  color: white;
+  background-color: black;
+  padding: 2vw 7vw;
+  display: flex;
+  max-width: 100%;
+} 
 </style>
 
 <script>
