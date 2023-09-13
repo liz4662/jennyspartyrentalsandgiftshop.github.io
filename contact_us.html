@@ -12,27 +12,26 @@
     <header>
       <h1>CONTACT</h1>
     </header>
-
     <nav id="navbar" class="nav">
-      <div class="logo">
-        <img href="index.html" src="logo.png" alt="Yellow logo with a bounce house in the center.">
+      <div class="favicon">
+        <img href="index.html" src="favicon.png" alt="Yellow logo with a bounce house in the center.">
       </div>
-      
+      <div>
       <ul class="nav-list">
         <li>
           <a  id="home" href="index.html">HOME</a>
         </li>
         <li>
-          <a id="bounce" href="bounce_house.html">BOUNCE HOUSE</a>
+          <a id="bounce" href="bounce_house.html">BOUNCE HOUSES</a>
         </li>
         <li>
           <a id="balloons" href="balloons.html">BALLOONS</a>
         </li>
         <li>
-          <a id="chairs" href="#projects">CHAIRS</a>
+          <a id="chairs" href="chairs.html">CHAIRS</a>
         </li>
         <li>
-          <a id="tables" href="#projects">TABLES</a>
+          <a id="tables" href="tables.html">TABLES</a>
         </li>
         <li>
           <a id="about" href="about.html">ABOUT</a>
@@ -41,8 +40,11 @@
           <a id="contact" href="contact_us.html">CONTACT</a>
         </li>
       </ul>
+    </div>
+      <div class="phone_num">
+      <h1>CALL TO NOW TO RENT: (323) 535-9623</h1>
+    </div>
     </nav>
-    
 <section class="maps">
   <h2 >Call us NOW at: (323) 535-9623</h2>
   <div class="map" >
@@ -81,6 +83,42 @@
 
 
 <style>
+  .favicon img{
+  width: 5vw;
+  margin: .5vw 3vw;
+  z-index: 100;
+
+}
+.nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(rgb(0,0,0,1), rgb(0,0,0,0));
+  z-index: 100;
+  color: white;
+}
+
+nav li {
+  display:inline-block;
+  list-style: none;
+}
+nav h1{
+  font-size: 1.2vw;
+  padding: 2.5vw 0;
+  padding-left:16vw;
+}
+
+nav a {
+  text-decoration: none;
+  color:white;
+  padding: 2.5vw 1vw;
+  font-size: 1vw;
+  display: block;
+}
+.nav div{
+  float:right;
+}
 .insta{
   padding: 5vw 10vw;
     align-items: center;
@@ -124,28 +162,6 @@ body{
   z-index: 100;
 
 }
-.nav {
-  display: flex;
-  justify-content:left;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: linear-gradient(rgb(0,0,0,1), rgb(0,0,0,0));
-  z-index: 100;
-}
-
-nav li {
-  display:inline-block;
-  list-style: none;
-}
-
-nav a {
-  text-decoration: none;
-  color:white;
-  padding: 2.5vw;
-  font-size: 1vw;
-  display: block;
-}
 
 .map{
   display: flex; 
@@ -164,14 +180,6 @@ section{
   width:60%;
   border-radius:20px;
 }
-footer{
-  margin-top:10vw;
-  display: flex;
-  background-color: #ead1dc;
-  max-width: 100%;
-  padding: 10px 40px;
-  justify-content: space-around;
-  }
 
 @media (hover: hover) {
   #home:hover {
@@ -203,6 +211,17 @@ footer{
     background: violet;
   }
 }
+footer > p {
+  margin: 2vw;
+}
+footer{
+  color: white;
+  background-color: black;
+  padding: 2vw 7vw;
+  display: flex;
+  max-width: 100%;
+} 
 
 </style>
 </html>
+
