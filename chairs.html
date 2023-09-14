@@ -14,19 +14,19 @@
     </header>
 
     <nav id="navbar" class="nav">
-      <div class="logo">
-        <img href="index.html" src="favicon.png" alt="bounce house icon">
+      <div class="favicon">
+        <img href="index.html" src="favicon.png">
       </div>
-      
+      <div>
       <ul class="nav-list">
         <li>
           <a  id="home" href="index.html">HOME</a>
         </li>
         <li>
-          <a id="bounce" href="bounce_house.html">BOUNCE HOUSE</a>
+          <a id="bounce" href="bounce_house.html">BOUNCE HOUSES</a>
         </li>
         <li>
-          <a id="balloons" href="balloons.html">BALLOONS</a>
+          <a id="balloon" href="balloons.html">BALLOONS</a>
         </li>
         <li>
           <a id="chairs" href="chairs.html">CHAIRS</a>
@@ -41,24 +41,28 @@
           <a id="contact" href="contact_us.html">CONTACT</a>
         </li>
       </ul>
-  </nav>
+    </div>
+      <div class="phone_num">
+      <h1>CALL TO NOW TO RENT: (323) 535-9623</h1>
+    </div>
+    </nav>
 <section class="pic_wall">
-    <img class="enlarge-onhover" src="chair1.JPG">
-    <img class="enlarge-onhover" src="chair2.JPG">
+    <img class="chair enlarge-onhover" src="chair1.JPG">
+    <img class="chair enlarge-onhover" src="chair2.JPG">
 </section>
     
 
-  <footer >
-    <p class="footer"><strong> OPENING HOURS:</strong><br />
-      Monday-Friday: 8am-8pm<br />Saturday-Sunday: 8am-4pm
-    </p>
-    <p class="footer"><em>
-    <strong> Jenny's Party Rentals & Gifts</strong><br />
-    1027 Long Beach Blvd, <br />
-    Lynwood, CA 90262<br /></em>
-    </p>
-    <p>Image by <a href="https://www.freepik.com/free-photo/full-shot-smiley-girl-bounce-house_29801462.htm#query=bounce%20house&position=0&from_view=search&track=ais">Freepik</a></p>
-  </footer>
+<footer >
+  <p class="footer"><strong> OPENING HOURS:</strong><br />
+    Monday-Friday: 8am-8pm<br />Saturday-Sunday: 8am-4pm
+  </p>
+  <p class="footer"><em>
+  <strong> Jenny's Party Rentals & Gifts</strong><br />
+  1027 Long Beach Blvd, <br />
+  Lynwood, CA 90262<br /></em>
+  </p>
+  <p>Image by <a href="https://www.freepik.com/free-photo/full-shot-smiley-girl-bounce-house_29801462.htm#query=bounce%20house&position=0&from_view=search&track=ais">Freepik</a></p>
+</footer>
 </body>
 
 
@@ -69,6 +73,12 @@
   margin: .5vw 3vw;
   z-index: 100;
 
+}
+
+.favicon:hover{
+  cursor:pointer;
+  transform:scale(1.2,1.2);
+  
 }
 .nav {
   display: flex;
@@ -112,7 +122,7 @@ nav a {
   display:flexbox;
   border-radius: 20px;
 }
-img:hover{
+.chair:hover{
   cursor:pointer;
   transform:scale(1.5,1.5);
   
@@ -196,7 +206,7 @@ section{
     background: violet;
   }
   }
-  footer > p {
+footer > p {
   margin: 2vw;
 }
 footer{
