@@ -1,12 +1,3 @@
- html {
-      scroll-behavior: smooth;
-  }
-  *{
-      box-sizing: inherit;
-      margin: 0;
-      padding:0;
-      
-  }
 .favicon img{
     width: 5vw;
     margin: .5vw 3vw;
@@ -69,12 +60,12 @@ footer{
 } 
 h2{
     margin: 6.5vw 0;
-  
     font-size: 3vw;
     text-align: center;
   }
   
   header{
+    margin-bottom: 6.5vw;
     background-color: black;
     color:white;
     height: 30vw;
@@ -84,12 +75,22 @@ h2{
     padding-left: 10vw;
     font-size: 4vw;
   }
+  html {
+      scroll-behavior: smooth;
+  }
+  *{
+      box-sizing: inherit;
+      margin: 0;
+      padding:0;
+      
+  }
   
   h3{
     padding-top: 5vw; 
     font-size: 2vw;
     text-align: center;
   }
+
   
   @media (hover: hover) {
     #home:hover {
@@ -100,7 +101,7 @@ h2{
       color: white;
       background: blue;
     }
-    #balloons:hover {
+    #balloon:hover {
       color: white;
       background: purple;
     }
