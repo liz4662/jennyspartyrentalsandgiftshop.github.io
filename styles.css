@@ -3,8 +3,8 @@
     margin: .5vw 3vw;
     z-index: 100;
   }
-.favicon:hover{
-    cursor:pointer;
+.favicon: hover{
+    cursor: pointer;
     transform: scale(1.2,1.2);
 }
 .nav {
@@ -12,7 +12,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background: linear-gradient(rgb(0,0,0,1), rgb(0,0,0,0));
+    background: linear-gradient( rgb(0,0,0,1), rgb(0,0,0,0));
     z-index: 100;
     color: white;
 }
@@ -23,11 +23,11 @@ nav li {
 nav h1{
     font-size: 1.2vw;
     padding: 2.5vw 0;
-    padding-left:16vw;
+    padding-left: 16vw;
 }
 nav .nav_button {
     text-decoration: none;
-    color:white;
+    color: white;
     padding: 2.5vw 1vw;
     font-size: 1vw;
     display: block;
@@ -39,8 +39,7 @@ nav .nav_button {
     transition: transform .2s;
     width:  25vw;
     height: 25vw;
-    padding: 5px;
-    display:flexbox;
+    display: flexbox;
     border-radius: 20px;
 }
 .pic_wall img:hover{
@@ -54,7 +53,7 @@ footer{
     margin-top: 6.5vw;
     color: white;
     background-color: black;
-    padding: 2vw 7vw;
+    padding: 2vw 9vw;
     display: flex;
     max-width: 100%;
 } 
@@ -147,7 +146,7 @@ h2{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 98;
-    color:white;
+    color: white;
     font-size: 6vw;
     text-align: center;
     color: #fff;
@@ -156,7 +155,7 @@ h2{
 }
     
 .left{
-    float:left;
+    float: left;
     margin-left: 5vw;
 }
 .right{
@@ -167,7 +166,7 @@ h2{
 .slideshow-container {
     position: relative;
     width:100%;
-    height:auto;
+    height: auto;
 }
     
 .mySlides img{
@@ -180,7 +179,7 @@ h2{
 }
     
 .fade {
-    animation-name:fade;
+    animation-name: fade;
     animation-duration:3s;
 }
     
@@ -199,6 +198,6 @@ h2{
     text-align: center
 }
 .maps iframe{
-    width:60%;
-    border-radius:20px;
+    width: 60%;
+    border-radius: 20px;
 }
