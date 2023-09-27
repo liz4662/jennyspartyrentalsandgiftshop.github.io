@@ -1,12 +1,12 @@
 <!DOCTYPE>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
     <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Profile</title>
-</head>
-<nav id="navbar" class="nav">
+    <title>Jenny's Party Rentals & Gift Shop</title>
+  </head>
+  <nav id="navbar" class="nav">
     <div class="favicon">
       <img href="index.html" src="favicon.png" alt="Yellow logo with a bounce house in the center.">
     </div>
@@ -25,6 +25,9 @@
         <a id="chairs" class="nav_button" href="chairs.html">CHAIRS & TABLES</a>
       </li>
       <li>
+        <a id="other" class="nav_button" href="other.html">OTHER</a>
+      </li>
+      <li>
         <a id="about" class="nav_button" href="about.html">ABOUT</a>
       </li>
       <li>
@@ -35,12 +38,13 @@
     <div class="phone_num">
     <h1>CALL NOW TO RENT: (323) 535-9623</h1>
   </div>
-</nav>
+  </nav>
+
+
   <section id="slideshow-container" class="slideshow-container">
     <div class="logo">
       <img href="index.html" src="whiteblack_logo.png" alt="Yellow logo with a bounce house in the center.">
     </div>
-
     <div class="mySlides fade">
       <img src="medium-shot-girl-holding-stick.jpg">
       </div>
@@ -55,18 +59,26 @@
   </section>
 
   <section class="picSec">
-  <div class="sec1">
-    <div class="events right"><h1>Birthdays!</h1></div>
-    <img  src="balloon3.jpg" >
-  </div>
-  <div class="sec2">
-    <div class="events left"><h1>Graduation!</h1></div>
-    <img  src="balloon5.jpg" >
-  </div>
+    <h2>WE CAN HELP YOU WITH ANY CELEBRATION!</h2>
   </section>
-  <footer>
+  <div class="wrapper">
+    <div class="container bg-one">
+      <div class="child1">
+        <span>BIRTHDAYS</span>
+      </div>
+    </div>
+    <div class="container bg-two">
+      <div class="child2">
+        <span>GRADUATIONS</span>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer >
     <p class="footer"><strong> OPENING HOURS:</strong><br />
-      Monday - Friday: 8am - 8pm<br />Saturday - Sunday: 8am - 4pm
+      Monday-Friday: 8am-8pm<br />Saturday-Sunday: 8am-4pm
     </p>
     <p class="footer"><em>
     <strong> Jenny's Party Rentals & Gifts</strong><br />
@@ -76,7 +88,7 @@
     <p>Image by <a href="https://www.freepik.com/free-photo/full-shot-smiley-girl-bounce-house_29801462.htm#query=bounce%20house&position=0&from_view=search&track=ais">Freepik</a></p>
   </footer>
   </body>
-
+  
 <script>
   let slideIndex = 0;
   showSlides();
