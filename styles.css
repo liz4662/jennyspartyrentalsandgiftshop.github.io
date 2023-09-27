@@ -230,12 +230,18 @@ h3{
     background-image: url("balloon5.jpg");
     background-size: cover;
   }
-  .child1, .child2 {
+  .child1{
     height: 100%;
     width: 100%;
     transition: all .8s;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 255, 0, 0.75);
   }
+.child2{
+    height: 100%;
+    width: 100%;
+    transition: all .8s;
+    background-color: rgba(255, 0, 0, 0.75);
+}
   span {
     font-size: 25px;
     color: #ffffff;
