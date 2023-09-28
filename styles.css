@@ -2,12 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
-button:not([class^="_hj"])
-
 *{
-    box-sizing: inherit;
-    margin: 0;
-    padding:0;
 }
 .favicon img{
     width: 5vw;
