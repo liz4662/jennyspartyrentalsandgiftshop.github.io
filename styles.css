@@ -6,6 +6,7 @@ html {
     margin: 0;
     padding: 0;
 }
+
 .favicon img{
     width: 5vw;
     margin: .5vw 3vw;
@@ -14,6 +15,13 @@ html {
 .favicon:hover{
     cursor:pointer;
     transform: scale(1.2,1.2);
+}
+.favicon img,
+.logo img,
+.about img,
+.mySlides img {
+  max-width: 100%;
+  height: auto;
 }
 .nav {
     display: flex;
@@ -74,7 +82,7 @@ header{
 h1{
     padding-top: 18vw;
     padding-left: 10vw;
-    font-size: 35px;
+    font-size: 2.5rem;
 }
 h2{
     margin: 6.5vw 0;
