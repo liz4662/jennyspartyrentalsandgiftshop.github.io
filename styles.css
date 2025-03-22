@@ -1,284 +1,14 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-h1{
-    padding-top: 18vw;
-    padding-left: 10vw;
-    font-size: 2.5rem;
-}
-h2{
-    margin: 6.5vw 0;
-    font-size: 2rem;
-    text-align: center;
-}
-h3{
-    padding-top: 5vw; 
-    font-size: 1.5rem;
-    text-align: center;
-}
-.favicon img{
-    width: 5vw;
-    margin: .5vw 3vw;
-    z-index: 100;
-}
-.favicon:hover{
-    cursor:pointer;
-    transform: scale(1.2,1.2);
-}
-.favicon img,
-.logo img,
-.about img,
-.mySlides img {
-  max-width: 100%;
-  height: auto;
-}
-.nav {
-    display: flex;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: linear-gradient(rgb(0,0,0,1), rgb(0,0,0,0));
-    z-index: 100;
-    color: white;
-}
-nav li {
-    display:inline-block;
-    list-style: none;
-}
-nav h1{
-    font-size: 1.2vw;
-    padding: 2.5vw 0;
-    padding-left: 15vw;
-}
-nav .nav_button {
-    text-decoration: none;
-    color:white;
-    padding: 2.5vw 1vw;
-    font-size: 1vw;
-    display: block;
-}
-.pic_wall{
-    text-align: center;
-}
-.pic_wall img{
-    transition: transform .2s;
-    width:  20vw;
-    height: 20vw;
-    display:flexbox;
-    border-radius: 20px;
-}
-.pic_wall img:hover{
-    cursor:pointer;
-    transform:scale(1.5,1.5);
-}
-footer > p {
-    margin: 2vw;
-}
-footer{
-    margin-top: 6.5vw;
-    color: white;
-    background-color: black;
-    padding: 2vw 9vw;
-    display: flex;
-    max-width: 100%;
-} 
-header{
-    margin-bottom: 6.5vw;
-    background-color: black;
-    color:white;
-    height: 30vw;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo img{
-    width:350px;
-}
-.picSec h2{
-    margin: 4vw 0;
-}
-@media (hover: hover) {
-    #home:hover {
-      color: white;
-      background: red;
-    }
-    #bounce:hover {
-      color: white;
-      background: blue;
-    }
-    #balloon:hover {
-      color: white;
-      background: purple;
-    }
-    #chairs:hover {
-      color: white;
-      background: orange;
-    }
-    #other:hover {
-      color: white;
-      background: green;
-    }
-    #about:hover {
-      color: white;
-      background: indigo;
-    }
-    #contact:hover {
-      color: white;
-      background: violet;
-    }
-}
-.picSec{
-    padding: 5vw 7vw;
-}
-.picSec img{
-    width: 0%;
-    height: auto;
-    margin-top: 6vw;
-    margin-left:5vw;
-    border-radius: 3vw;
-}
-.events{
-    margin: 10px 0vw;
-    font-size: 3vw;
-}
-.logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 98;
-    color:white;
-    text-align: center;
-    color: #fff;
-}
-.about img{
-    width:60%;
-}
-.about{
-    text-align: center;
-    margin:0 20vw;
-}
-.left{
-    float:left;
-    margin-left: 5vw;
-}
-.right{
-    float: right;
-    margin-right: 5vw;
-}
-.slideshow-container {
-    position: relative;
-    width: 100%;
-    height: 55vw;
-    overflow: hidden;
-}
-.mySlides img{
-    width:100%;
-    object-fit: cover;
-    max-width: 100%;
-    height: auto;
-    margin:0;
-    opacity:1;
-}
-.fade {
-    animation-name:fade;
-    animation-duration:3s;
-}
-@keyframes fade {
-    from {opacity: .8} 
-    to {opacity: 1}
-}
-.insta{
-    padding: 5vw 10vw;
-     align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.map{
-    display: flex; 
-    text-align: center
-}
-.maps iframe{
-    width:60%;
-    border-radius:20px;
-}
-.wrapper {
-    padding: 0 7vw;
-    text-align: center;
-    margin:auto;
-}
-.container {
-    width: 70%;
-    height: 350px;
-    border: 3px solid #d2d1d1;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    cursor: default;
-}
-.bg-one {
-    background-image: url("balloon3.jpg");
-    background-size: cover;
-  }
-  .bg-two {
-    background-image: url("balloon5.jpg");
-    background-size: cover;
-  }
-  .child1, .child2{
-    height: 100%;
-    width: 100%;
-    transition: all .8s;
-    background-color: rgba(0, 0, 0, 0.75);
-  }
-  span {
-    font-size: 25px;
-    color: #ffffff;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 50px;
-    cursor: default;
-  }
-  .container:hover .child1,.container:hover .child2,
-  .container:focus .child1,.container:focus .child2 {
-    transform: scale(1.2);
-  }
-  .container:hover .child1:before,.container:hover .child2:before,
-  .container:focus .child1:before,.container:focus .child2:before {
-    display: block;
-  }
-  .child1:before {
-    content: "";
-    display: none;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background-image: url("balloon3.jpg");
-    z-index: 100;
-  }
-  .child2:before {
-    content: "";
-    display: none;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background-image: url("balloon5.jpg");
-    z-index: 100;
-  }
+/* HAMBURGER MENU */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -297,7 +27,7 @@ header{
   transition: 0.4s;
 }
 
-/* === SIDE MENU === */
+/* SIDE MENU */
 .side-menu {
   display: none;
   flex-direction: column;
@@ -328,6 +58,8 @@ header{
   text-decoration: none;
   font-size: 1.2rem;
 }
+
+/* RESPONSIVE MENU FOR SMALLER SCREENS */
 @media (max-width: 768px) {
   .nav .nav-list,
   .nav .phone_num {
@@ -347,4 +79,335 @@ header{
     font-size: 5vw;
     padding: 0;
   }
+}
+
+/* RETAINED EXISTING STYLES */
+h1 {
+  padding-top: 18vw;
+  padding-left: 10vw;
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin: 6.5vw 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h3 {
+  padding-top: 5vw;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.favicon img {
+  width: 5vw;
+  margin: 0.5vw 3vw;
+  z-index: 100;
+}
+
+.favicon:hover {
+  cursor: pointer;
+  transform: scale(1.2, 1.2);
+}
+
+.favicon img,
+.logo img,
+.about img,
+.mySlides img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(rgb(0, 0, 0, 1), rgb(0, 0, 0, 0));
+  z-index: 100;
+  color: white;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+}
+
+nav h1 {
+  font-size: 1.2vw;
+  padding: 2.5vw 0;
+  padding-left: 15vw;
+}
+
+nav .nav_button {
+  text-decoration: none;
+  color: white;
+  padding: 2.5vw 1vw;
+  font-size: 1vw;
+  display: block;
+}
+
+.pic_wall {
+  text-align: center;
+}
+
+.pic_wall img {
+  transition: transform 0.2s;
+  width: 20vw;
+  height: 20vw;
+  display: flexbox;
+  border-radius: 20px;
+}
+
+.pic_wall img:hover {
+  cursor: pointer;
+  transform: scale(1.5, 1.5);
+}
+
+footer > p {
+  margin: 2vw;
+}
+
+footer {
+  margin-top: 6.5vw;
+  color: white;
+  background-color: black;
+  padding: 2vw 9vw;
+  display: flex;
+  max-width: 100%;
+}
+
+header {
+  margin-bottom: 6.5vw;
+  background-color: black;
+  color: white;
+  height: 30vw;
+}
+
+.logo img {
+  width: 350px;
+}
+
+.picSec h2 {
+  margin: 4vw 0;
+}
+
+@media (hover: hover) {
+  #home:hover {
+    color: white;
+    background: red;
+  }
+
+  #bounce:hover {
+    color: white;
+    background: blue;
+  }
+
+  #balloon:hover {
+    color: white;
+    background: purple;
+  }
+
+  #chairs:hover {
+    color: white;
+    background: orange;
+  }
+
+  #other:hover {
+    color: white;
+    background: green;
+  }
+
+  #about:hover {
+    color: white;
+    background: indigo;
+  }
+
+  #contact:hover {
+    color: white;
+    background: violet;
+  }
+}
+
+.picSec {
+  padding: 5vw 7vw;
+}
+
+.picSec img {
+  width: 0%;
+  height: auto;
+  margin-top: 6vw;
+  margin-left: 5vw;
+  border-radius: 3vw;
+}
+
+.events {
+  margin: 10px 0vw;
+  font-size: 3vw;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 98;
+  color: white;
+  text-align: center;
+  color: #fff;
+}
+
+.about img {
+  width: 60%;
+}
+
+.about {
+  text-align: center;
+  margin: 0 20vw;
+}
+
+.left {
+  float: left;
+  margin-left: 5vw;
+}
+
+.right {
+  float: right;
+  margin-right: 5vw;
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 55vw;
+  overflow: hidden;
+}
+
+.mySlides img {
+  width: 100%;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  opacity: 1;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.insta {
+  padding: 5vw 10vw;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.map {
+  display: flex;
+  text-align: center;
+}
+
+.maps iframe {
+  width: 60%;
+  border-radius: 20px;
+}
+
+.wrapper {
+  padding: 0 7vw;
+  text-align: center;
+  margin: auto;
+}
+
+.container {
+  width: 70%;
+  height: 350px;
+  border: 3px solid #d2d1d1;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: default;
+}
+
+.bg-one {
+  background-image: url("balloon3.jpg");
+  background-size: cover;
+}
+
+.bg-two {
+  background-image: url("balloon5.jpg");
+  background-size: cover;
+}
+
+.child1,
+.child2 {
+  height: 100%;
+  width: 100%;
+  transition: all 0.8s;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+span {
+  font-size: 25px;
+  color: #ffffff;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  cursor: default;
+}
+
+.container:hover .child1,
+.container:hover .child2,
+.container:focus .child1,
+.container:focus .child2 {
+  transform: scale(1.2);
+}
+
+.container:hover .child1:before,
+.container:hover .child2:before,
+.container:focus .child1:before,
+.container:focus .child2:before {
+  display: block;
+}
+
+.child1:before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-image: url("balloon3.jpg");
+  z-index: 100;
+}
+
+.child2:before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-image: url("balloon5.jpg");
+  z-index: 100;
 }
