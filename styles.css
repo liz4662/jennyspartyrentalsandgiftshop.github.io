@@ -1,92 +1,79 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
-/* === General === */
 body {
   font-family: Arial, sans-serif;
 }
-
-h1 {
-  padding-top: 18vw;
-  padding-left: 10vw;
-  font-size: 2.5rem;
+h1{
+    padding-top: 18vw;
+    padding-left: 10vw;
+    font-size: 2.5rem;
 }
-
-h2 {
-  margin: 6.5vw 0;
-  font-size: 2rem;
-  text-align: center;
+h2{
+    margin: 6.5vw 0;
+    font-size: 2rem;
+    text-align: center;
 }
-
-h3 {
-  padding-top: 5vw;
-  font-size: 1.5rem;
-  text-align: center;
+h3{
+    padding-top: 5vw; 
+    font-size: 1.5rem;
+    text-align: center;
 }
-
 span {
-  font-size: 1.5rem;
-  color: #ffffff;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  height: 50px;
-  cursor: default;
-}
-
-/* === Navigation === */
+    font-size: 1.5rem;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 50px;
+    cursor: default;
+  }
 .nav {
-  display: flex;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: linear-gradient(rgb(0, 0, 0, 1), rgb(0, 0, 0, 0));
-  z-index: 100;
-  color: white;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1vw 3vw;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(rgb(0,0,0,1), rgb(0,0,0,0));
+    z-index: 100;
+    color: white;
 }
-
 nav li {
-  display: inline-block;
-  list-style: none;
+    display:inline-block;
+    list-style: none;
+}
+nav h1{
+    font-size: 1.2vw;
+    padding: 2.5vw 0;
+    padding-left: 15vw;
+}
+nav .nav_button {
+    text-decoration: none;
+    color:white;
+    padding: 2.5vw 1vw;
+    font-size: 1vw;
+    display: block;
 }
 
-nav h1 {
-  font-size: 1.2vw;
+.favicon img{
+    width: 5vw;
+    margin: .5vw 3vw;
+    z-index: 100;
 }
-
-.nav_button {
-  text-decoration: none;
-  color: white;
-  padding: 2vw 1vw;
-  font-size: 1vw;
-  display: block;
+.favicon:hover{
+    cursor:pointer;
+    transform: scale(1.2,1.2);
 }
-
-@media (hover: hover) {
-  #home:hover { background: red; }
-  #bounce:hover { background: blue; }
-  #balloon:hover { background: purple; }
-  #chairs:hover { background: orange; }
-  #other:hover { background: green; }
-  #about:hover { background: indigo; }
-  #contact:hover { background: violet; }
-}
-
-/* === Logo and Favicon === */
 .favicon img,
 .logo img,
 .about img,
@@ -94,282 +81,234 @@ nav h1 {
   max-width: 100%;
   height: auto;
 }
-
-.favicon img {
-  width: 5vw;
-  margin: .5vw 3vw;
-  z-index: 100;
+.nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(rgb(0,0,0,1), rgb(0,0,0,0));
+    z-index: 100;
+    color: white;
 }
-
-.favicon:hover {
-  cursor: pointer;
-  transform: scale(1.2);
+nav li {
+    display:inline-block;
+    list-style: none;
 }
-
-.logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 98;
-  text-align: center;
-  color: white;
+nav h1{
+    font-size: 1.2vw;
+    padding: 2.5vw 0;
+    padding-left: 15vw;
 }
-
-/* === Slideshow === */
-.slideshow-container {
-  position: relative;
-  width: 100%;
-  height: 55vw;
-  overflow: hidden;
+nav .nav_button {
+    text-decoration: none;
+    color:white;
+    padding: 2.5vw 1vw;
+    font-size: 1vw;
+    display: block;
 }
-
-.mySlides {
-  display: none;
+.pic_wall{
+    text-align: center;
 }
-
-.mySlides img {
-  width: 100%;
-  object-fit: cover;
-  opacity: 1;
+.pic_wall img{
+    transition: transform .2s;
+    width:  20vw;
+    height: 20vw;
+    display:flexbox;
+    border-radius: 20px;
 }
-
-.fade {
-  animation-name: fade;
-  animation-duration: 3s;
+.pic_wall img:hover{
+    cursor:pointer;
+    transform:scale(1.5,1.5);
 }
-
-@keyframes fade {
-  from { opacity: .8; }
-  to { opacity: 1; }
-}
-
-/* === Sections === */
-.picSec {
-  padding: 5vw 7vw;
-}
-
-.picSec h2 {
-  margin: 4vw 0;
-}
-
-.pic_wall {
-  text-align: center;
-}
-
-.pic_wall img {
-  transition: transform .2s;
-  width: 20vw;
-  height: 20vw;
-  border-radius: 20px;
-}
-
-.pic_wall img:hover {
-  cursor: pointer;
-  transform: scale(1.5);
-}
-
-.wrapper {
-  padding: 0 7vw;
-  text-align: center;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  gap: 5vw;
-  flex-wrap: wrap;
-}
-
-.container {
-  width: 70%;
-  max-width: 400px;
-  height: 350px;
-  border: 3px solid #d2d1d1;
-  overflow: hidden;
-  position: relative;
-  display: inline-block;
-  cursor: default;
-}
-
-.child1,
-.child2 {
-  height: 100%;
-  width: 100%;
-  transition: all .8s;
-  background-color: rgba(0, 0, 0, 0.75);
-}
-
-.container:hover .child1,
-.container:hover .child2 {
-  transform: scale(1.2);
-}
-
-.container:hover .child1:before,
-.container:hover .child2:before {
-  display: block;
-}
-
-.child1:before,
-.child2:before {
-  content: "";
-  display: none;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-size: cover;
-  z-index: 100;
-}
-
-.bg-one {
-  background-image: url("balloon3.jpg");
-  background-size: cover;
-}
-
-.bg-two {
-  background-image: url("balloon5.jpg");
-  background-size: cover;
-}
-
-.child1:before {
-  background-image: url("balloon3.jpg");
-}
-
-.child2:before {
-  background-image: url("balloon5.jpg");
-}
-
-/* === About Section === */
-.about {
-  text-align: center;
-  margin: 0 20vw;
-}
-
-.about img {
-  width: 60%;
-}
-
-.left {
-  float: left;
-  margin-left: 5vw;
-}
-
-.right {
-  float: right;
-  margin-right: 5vw;
-}
-
-/* === Footer === */
-footer {
-  margin-top: 6.5vw;
-  color: white;
-  background-color: black;
-  padding: 2vw 9vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 footer > p {
-  margin: 2vw;
+    margin: 2vw;
+}
+footer{
+    margin-top: 6.5vw;
+    color: white;
+    background-color: black;
+    padding: 2vw 9vw;
+    display: flex;
+    max-width: 100%;
+} 
+header{
+    margin-bottom: 6.5vw;
+    background-color: black;
+    color:white;
+    height: 30vw;
 }
 
-/* === Map === */
-.map {
-  display: flex;
-  text-align: center;
-  justify-content: center;
+.logo img{
+    width:350px;
 }
-
-.maps iframe {
-  width: 60%;
-  border-radius: 20px;
+.picSec h2{
+    margin: 4vw 0;
 }
-
-/* === Instagram Section === */
-.insta {
-  padding: 5vw 10vw;
-  text-align: center;
+@media (hover: hover) {
+    #home:hover {
+      color: white;
+      background: red;
+    }
+    #bounce:hover {
+      color: white;
+      background: blue;
+    }
+    #balloon:hover {
+      color: white;
+      background: purple;
+    }
+    #chairs:hover {
+      color: white;
+      background: orange;
+    }
+    #other:hover {
+      color: white;
+      background: green;
+    }
+    #about:hover {
+      color: white;
+      background: indigo;
+    }
+    #contact:hover {
+      color: white;
+      background: violet;
+    }
 }
-
-/* === Responsive Layout === */
-@media (max-width: 768px) {
-  nav h1 {
-    font-size: 4vw;
-    padding: 4vw 0;
+.picSec{
+    padding: 5vw 7vw;
+}
+.picSec img{
+    width: 0%;
+    height: auto;
+    margin-top: 6vw;
+    margin-left:5vw;
+    border-radius: 3vw;
+}
+.events{
+    margin: 10px 0vw;
+    font-size: 3vw;
+}
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 98;
+    color:white;
     text-align: center;
-  }
-
-  .nav {
-    flex-direction: column;
-    padding: 4vw 2vw;
-    align-items: center;
-  }
-
-  .nav-list {
-    flex-direction: column;
+    color: #fff;
+}
+.about img{
+    width:60%;
+}
+.about{
+    text-align: center;
+    margin:0 20vw;
+}
+.left{
+    float:left;
+    margin-left: 5vw;
+}
+.right{
+    float: right;
+    margin-right: 5vw;
+}
+.slideshow-container {
+    position: relative;
     width: 100%;
-    text-align: center;
-  }
-
-  .nav_button {
-    font-size: 4vw;
-    padding: 2vw;
-  }
-
-  .logo img {
-    width: 80vw;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-    padding-left: 5vw;
-    padding-top: 12vw;
-  }
-
-  h2, h3 {
-    font-size: 1.4rem;
-  }
-
-  .about {
-    margin: 0 5vw;
-  }
-
-  .about img {
-    width: 100%;
-  }
-
-  .wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .container {
-    width: 90%;
-    height: auto;
-    margin-bottom: 5vw;
-  }
-
-  footer {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  footer p {
-    margin: 3vw 0;
-    font-size: 4vw;
-  }
-
-  .maps iframe {
-    width: 90%;
-  }
-
-  .pic_wall img {
-    width: 80vw;
-    height: auto;
-  }
-
-  .slideshow-container {
-    height: auto;
-  }
+    height: 55vw;
+    overflow: hidden;
 }
+.mySlides img{
+    width:100%;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    margin:0;
+    opacity:1;
+}
+.fade {
+    animation-name:fade;
+    animation-duration:3s;
+}
+@keyframes fade {
+    from {opacity: .8} 
+    to {opacity: 1}
+}
+.insta{
+    padding: 5vw 10vw;
+     align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.map{
+    display: flex; 
+    text-align: center
+}
+.maps iframe{
+    width:60%;
+    border-radius:20px;
+}
+.wrapper {
+    padding: 0 7vw;
+    text-align: center;
+    margin:auto;
+}
+.container {
+    width: 70%;
+    height: 350px;
+    border: 3px solid #d2d1d1;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: default;
+}
+.bg-one {
+    background-image: url("balloon3.jpg");
+    background-size: cover;
+  }
+  .bg-two {
+    background-image: url("balloon5.jpg");
+    background-size: cover;
+  }
+  .child1, .child2{
+    height: 100%;
+    width: 100%;
+    transition: all .8s;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  
+  .container:hover .child1,.container:hover .child2,
+  .container:focus .child1,.container:focus .child2 {
+    transform: scale(1.2);
+  }
+  .container:hover .child1:before,.container:hover .child2:before,
+  .container:focus .child1:before,.container:focus .child2:before {
+    display: block;
+  }
+  .child1:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url("balloon3.jpg");
+    z-index: 100;
+  }
+  .child2:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url("balloon5.jpg");
+    z-index: 100;
+  }
+
+
