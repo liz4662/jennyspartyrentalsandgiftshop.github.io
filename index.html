@@ -34,6 +34,7 @@
     <li><a href="about.html">ABOUT</a></li>
     <li><a href="contact_us.html">CONTACT</a></li>
   </ul>
+  <div id="menuOverlay" class="menu-overlay" onclick="closeMenu()"></div>
 
   <!-- Navigation Bar -->
   <nav id="navbar" class="nav">
@@ -120,6 +121,18 @@
       const menu = document.getElementById("sideMenu");
       menu.classList.toggle("active");
     }
+    function closeMenu() {
+    document.getElementById("sideMenu").classList.remove("active");
+    document.getElementById("menuOverlay").style.display = "none";
+  }
+
+  // Close menu when a link is clicked
+  document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll(".side-menu a");
+    links.forEach(link => {
+      link.addEventListener("click", closeMenu);
+    });
+  });
   </script>
 </body>
 </html>
