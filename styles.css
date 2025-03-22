@@ -6,58 +6,6 @@ html {
     margin: 0;
     padding: 0;
 }
-h1{
-    padding-top: 18vw;
-    padding-left: 10vw;
-    font-size: 2.5rem;
-}
-h2{
-    margin: 6.5vw 0;
-    font-size: 2rem;
-    text-align: center;
-}
-h3{
-    padding-top: 5vw; 
-    font-size: 1.5rem;
-    text-align: center;
-}
-span {
-    font-size: 1.5rem;
-    color: #ffffff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    height: 50px;
-    cursor: default;
-  }
-.nav {
-    display: flex;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: linear-gradient(rgb(0,0,0,1), rgb(0,0,0,0));
-    z-index: 100;
-    color: white;
-}
-nav li {
-    display:inline-block;
-    list-style: none;
-}
-nav h1{
-    font-size: 1.2vw;
-    padding: 2.5vw 0;
-    padding-left: 15vw;
-}
-nav .nav_button {
-    text-decoration: none;
-    color:white;
-    padding: 2.5vw 1vw;
-    font-size: 1vw;
-    display: block;
-}
 
 .favicon img{
     width: 5vw;
@@ -131,7 +79,21 @@ header{
     color:white;
     height: 30vw;
 }
-
+h1{
+    padding-top: 18vw;
+    padding-left: 10vw;
+    font-size: 2.5rem;
+}
+h2{
+    margin: 6.5vw 0;
+    font-size: 25px;
+    text-align: center;
+}
+h3{
+    padding-top: 5vw; 
+    font-size: 20px;
+    text-align: center;
+}
 .logo img{
     width:350px;
 }
@@ -271,7 +233,18 @@ header{
     transition: all .8s;
     background-color: rgba(0, 0, 0, 0.75);
   }
-  
+  span {
+    font-size: 25px;
+    color: #ffffff;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: default;
+  }
   .container:hover .child1,.container:hover .child2,
   .container:focus .child1,.container:focus .child2 {
     transform: scale(1.2);
@@ -304,5 +277,3 @@ header{
     background-image: url("balloon5.jpg");
     z-index: 100;
   }
-
-
