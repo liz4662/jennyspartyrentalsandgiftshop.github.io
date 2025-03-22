@@ -26,6 +26,7 @@
 
   <!-- Side Navigation Menu -->
   <ul class="side-menu" id="sideMenu">
+    <li class="close-btn"><a href="javascript:void(0);" onclick="closeMenu()">×</a></li>
     <li><a href="index.html">HOME</a></li>
     <li><a href="bounce_house.html">BOUNCE HOUSES</a></li>
     <li><a href="balloons.html">BALLOONS</a></li>
@@ -119,6 +120,17 @@
       const menu = document.getElementById("sideMenu");
       menu.classList.toggle("active");
     }
+    function closeMenu() {
+      document.getElementById("sideMenu").classList.remove("active");
+    }
+  
+    // Auto close when link clicked
+    document.addEventListener("DOMContentLoaded", () => {
+      const links = document.querySelectorAll(".side-menu a:not(.close-btn a)");
+      links.forEach(link => {
+        link.addEventListener("click", closeMenu);
+      });
+    });
   
   </script>
 </body>
