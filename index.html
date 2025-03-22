@@ -17,129 +17,109 @@
     
   </script>
   <body>
-    <div class="hamburger" onclick="toggleMenu()">
+  <!-- Hamburger Menu -->
+  <div class="hamburger" onclick="toggleMenu()">
     <div class="bar"></div>
     <div class="bar"></div>
     <div class="bar"></div>
+  </div>
+
+  <!-- Side Navigation Menu -->
+  <ul class="side-menu" id="sideMenu">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="bounce_house.html">BOUNCE HOUSES</a></li>
+    <li><a href="balloons.html">BALLOONS</a></li>
+    <li><a href="chairs.html">CHAIRS & TABLES</a></li>
+    <li><a href="other.html">OTHER</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="contact_us.html">CONTACT</a></li>
+  </ul>
+
+  <!-- Navigation Bar -->
+  <nav id="navbar" class="nav">
+    <div class="favicon">
+      <img src="favicon.png" alt="Yellow logo with a bounce house in the center." />
     </div>
-    
-    <!-- Side Navigation Menu -->
-    <ul class="side-menu" id="sideMenu">
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="bounce_house.html">BOUNCE HOUSES</a></li>
-      <li><a href="balloons.html">BALLOONS</a></li>
-      <li><a href="chairs.html">CHAIRS & TABLES</a></li>
-      <li><a href="other.html">OTHER</a></li>
-      <li><a href="about.html">ABOUT</a></li>
-      <li><a href="contact_us.html">CONTACT</a></li>
-    </ul>
-  
-    <nav id="navbar" class="nav">
-      <div class="favicon">
-        <img href="index.html" src="favicon.png" alt="Yellow logo with a bounce house in the center.">
-      </div>
-      <div>
+    <div>
       <ul class="nav-list">
-        <li>
-          <a  id="home" class="nav_button" href="index.html">HOME</a>
-        </li>
-        <li>
-          <a id="bounce" class="nav_button" href="bounce_house.html">BOUNCE HOUSES</a>
-        </li>
-        <li>
-          <a id="balloon" class="nav_button" href="balloons.html">BALLOONS</a>
-        </li>
-        <li>
-          <a id="chairs" class="nav_button" href="chairs.html">CHAIRS & TABLES</a>
-        </li>
-        <li>
-          <a id="other" class="nav_button" href="other.html">OTHER</a>
-        </li>
-        <li>
-          <a id="about" class="nav_button" href="about.html">ABOUT</a>
-        </li>
-        <li>
-          <a id="contact" class="nav_button" href="contact_us.html">CONTACT</a>
-        </li>
+        <li><a id="home" class="nav_button" href="index.html">HOME</a></li>
+        <li><a id="bounce" class="nav_button" href="bounce_house.html">BOUNCE HOUSES</a></li>
+        <li><a id="balloon" class="nav_button" href="balloons.html">BALLOONS</a></li>
+        <li><a id="chairs" class="nav_button" href="chairs.html">CHAIRS & TABLES</a></li>
+        <li><a id="other" class="nav_button" href="other.html">OTHER</a></li>
+        <li><a id="about" class="nav_button" href="about.html">ABOUT</a></li>
+        <li><a id="contact" class="nav_button" href="contact_us.html">CONTACT</a></li>
       </ul>
     </div>
-      <div class="phone_num">
+    <div class="phone_num">
       <h1>CALL NOW TO RENT: (323) 535-9623</h1>
     </div>
-    </nav>
+  </nav>
 
-
+  <!-- Slideshow -->
   <section id="slideshow-container" class="slideshow-container">
     <div class="logo">
-      <img href="index.html" src="whiteblack_logo.png" alt="Yellow logo with a bounce house in the center.">
+      <img src="whiteblack_logo.png" alt="Yellow logo with a bounce house in the center." />
     </div>
     <div class="mySlides fade">
-      <img src="medium-shot-girl-holding-stick.jpg">
-      </div>
+      <img src="medium-shot-girl-holding-stick.jpg" />
+    </div>
     <div class="mySlides fade">
-      <img src="full-shot-smiley-girl-bounce-house.jpg">
-      </div>
-    
+      <img src="full-shot-smiley-girl-bounce-house.jpg" />
+    </div>
     <div class="mySlides fade">
-      <img src="portrait-young-girls-party-with-balloons.jpg">
-      </div>
-
+      <img src="portrait-young-girls-party-with-balloons.jpg" />
+    </div>
   </section>
 
   <section class="picSec">
     <h2>WE CAN HELP YOU WITH ANY CELEBRATION!</h2>
   </section>
+
   <div class="wrapper">
     <div class="container bg-one">
-      <div class="child1">
-        <span>BIRTHDAYS</span>
-      </div>
+      <div class="child1"><span>BIRTHDAYS</span></div>
     </div>
     <div class="container bg-two">
-      <div class="child2">
-        <span>GRADUATIONS</span>
-      </div>
+      <div class="child2"><span>GRADUATIONS</span></div>
     </div>
   </div>
 
-
-
-  <footer >
-    <p class="footer"><strong> OPENING HOURS:</strong><br />
-      Monday - Friday: 8am - 8pm<br />Saturday - Sunday: 8am - 4pm
+  <footer>
+    <p class="footer"><strong>OPENING HOURS:</strong><br />
+      Monday - Friday: 8am - 8pm<br />
+      Saturday - Sunday: 8am - 4pm
     </p>
     <p class="footer"><em>
-    <strong> Jenny's Party Rentals & Gift Shop</strong><br />
-    1027 Long Beach Blvd, <br />
-    Lynwood, CA 90262<br /></em>
-    </p>
+      <strong>Jenny's Party Rentals & Gift Shop</strong><br />
+      1027 Long Beach Blvd, <br />
+      Lynwood, CA 90262<br />
+    </em></p>
     <p>Image by <a href="https://www.freepik.com/free-photo/full-shot-smiley-girl-bounce-house_29801462.htm#query=bounce%20house&position=0&from_view=search&track=ais">Freepik</a></p>
   </footer>
-    <script>
-  function toggleMenu() {
-    const menu = document.getElementById("sideMenu");
-    menu.classList.toggle("active");
-  }
-</script>
-  </body>
-  
-<script>
-  let slideIndex = 0;
-  showSlides();
 
-  function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1
-    }    
-  
-  slides[slideIndex-1].style.display = "block";  
-  setTimeout(showSlides, 7000); 
-}
-</script>
+  <!-- Slideshow Script -->
+  <script>
+    let slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 7000);
+    }
+
+    function toggleMenu() {
+      const menu = document.getElementById("sideMenu");
+      menu.classList.toggle("active");
+    }
+  </script>
+</body>
 </html>
