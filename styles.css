@@ -94,6 +94,9 @@ h3{
     font-size: 20px;
     text-align: center;
 }
+.logo img{
+    width:350px;
+}
 .picSec h2{
     margin: 4vw 0;
 }
