@@ -279,3 +279,72 @@ header{
     background-image: url("balloon5.jpg");
     z-index: 100;
   }
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: fixed;
+  top: 2vw;
+  right: 4vw;
+  z-index: 150;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* === SIDE MENU === */
+.side-menu {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #111;
+  padding-top: 60px;
+  z-index: 200;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+}
+
+.side-menu.active {
+  display: flex;
+  transform: translateX(0);
+}
+
+.side-menu li {
+  list-style: none;
+  padding: 15px 30px;
+}
+
+.side-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+  .nav .nav-list,
+  .nav .phone_num {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    justify-content: space-between;
+    padding: 2vw 4vw;
+  }
+
+  nav h1 {
+    font-size: 5vw;
+    padding: 0;
+  }
+}
